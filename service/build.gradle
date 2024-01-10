@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+apply from: '../dependencies.gradle'
+
+android {
+//    namespace 'com.yunya365.course'
+    defaultConfig {
+
+    }
+
+}
+
+dependencies {
+    api project(path: ':common')
+}

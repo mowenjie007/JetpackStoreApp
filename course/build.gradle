@@ -1,0 +1,20 @@
+if(singleModule.toBoolean()){
+    apply plugin: 'com.android.application'
+}else{
+    apply plugin: 'com.android.library'
+}
+apply from: '../dependencies.gradle'
+
+android {
+//    namespace 'com.yunya365.course'
+    defaultConfig {
+        // 只有独立运行时候才需要applicationId
+        if(singleModule.toBoolean()){
+            applicationId "com.yunya365.jetpackstore.course"
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':service')
+}
