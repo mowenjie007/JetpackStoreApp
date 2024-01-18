@@ -13,8 +13,8 @@ buildscript {
         lib_version_code = 1
         lib_version_name = "1.0.0"
 
-//        navigation_version = '2.2.1'
-        navigation_version = '2.4.1' // navigation 版本号， 需要在dependencies和classpath保持一致
+        navigation_version = '2.3.0'
+//        navigation_version = '2.4.1' // navigation 版本号， 需要在dependencies和classpath保持一致
         koin_version = '2.1.6' // 依赖注入框架
     }
 
@@ -28,6 +28,8 @@ buildscript {
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigation_version"//和navigation版本号一致
         classpath "org.koin:koin-gradle-plugin:$koin_version"
         classpath "com.alibaba:arouter-register:1.0.2"
+        // doraemonKit 调试辅助工具
+        classpath 'com.didichuxing.doraemonkit:doraemonkit-plugin:3.2.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -35,6 +37,7 @@ buildscript {
 }
 
 apply plugin: 'koin'
+apply plugin: 'com.didi.dokit'
 
 allprojects {
     repositories {

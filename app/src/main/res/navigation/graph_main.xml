@@ -4,25 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/graph_main"
     app:startDestination="@id/homeFragment">
-
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.yunya365.home.HomeFragment"
-        android:label="HomeFragment"
-        tools:layout="@layout/fragment_home"/>
+        tools:layout="@layout/fragment_home"
+        android:label="HomeFragment" />
     <fragment
         android:id="@+id/courseFragment"
         android:name="com.yunya365.course.CourseFragment"
-        android:label="CourseFragment"
-        tools:layout="@layout/fragment_course"/>
+        tools:layout="@layout/fragment_course"
+        android:label="CourseFragment" />
     <fragment
         android:id="@+id/studyFragment"
         android:name="com.yunya365.study.StudyFragment"
-        android:label="StudyFragment"
-        tools:layout="@layout/fragment_study"/>
+        tools:layout="@layout/fragment_study"
+        android:label="StudyFragment" />
     <fragment
         android:id="@+id/mineFragment"
         android:name="com.yunya365.mine.MineFragment"
-        android:label="MineFragment"
-        tools:layout="@layout/fragment_mine"/>
+        tools:layout="@layout/fragment_mine"
+        android:label="MineFragment" />
 </navigation>
